@@ -1,0 +1,32 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #ecf0f1;
+        --bg-color: #ecf0f1;
+        --accent-color: #e74c3c;
+        --accent-color-light: #e67e22;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #fff;
+        --bg-color: #2c3e50;
+        --accent-color: #3c0c58;
+        --accent-color-light: #8e44ad;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+p,h1,h2,a {
+    color: var(--text-color);
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
